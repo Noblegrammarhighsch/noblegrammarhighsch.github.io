@@ -1,0 +1,268 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  background: black;
+  /* background: #c20772; */
+  /* Updating */
+}
+
+body {
+  font-size: 16px;
+}
+
+#Home h1 {
+  font-size: 5vw;
+  /* 5% of the viewport width */
+}
+
+/* Add similar relative units to other elements */
+
+
+.progress-line {
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  animation: progress 3s linear;
+}
+
+@keyframes progress {
+  0% {
+    /* Initial: no width */
+    width: 0;
+  }
+
+  50% {
+    /* Midpoint: 90% of viewport width */
+    width: 90vw;
+  }
+
+  100% {
+    /* Final: 100% of viewport width, hides */
+    width: 100vw;
+    visibility: hidden;
+    /* After 100%, hide the progress bar */
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+#Home {
+  background-image: url(./background.png);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#Home h1 {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+#Home img {
+  position: absolute;
+  bottom: 0px;
+}
+
+#Mountain1 {
+  position: absolute;
+  margin-bottom: 106px;
+  margin-left: 60px;
+  width: 100%;
+  pointer-events: none;
+}
+
+#Mountain2 {
+  width: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#leftCloud,
+#mainCloud,
+#rightCloud {
+  top: 120px;
+  width: 200px;
+}
+
+#leftCloud {
+  left: 20px;
+}
+
+#rightCloud {
+  right: 20px;
+}
+
+@keyframes loadAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+header {
+  background-color: #191919;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  animation: slideInTop 1s ease-in-out;
+  /* Adding a slide-in animation from the top */
+  font-family: 'Aguafina Script';
+  font-size: 22px;
+  text-transform: capitalize;
+
+}
+
+.active {
+  color: black;
+}
+
+.active::before {
+  background-color: black;
+  width: 100%;
+}
+
+.container {
+  background: linear-gradient(to right, #c20772, #710e46);
+  /*  */
+  /* display: flex; */
+  color: white;
+  margin: 30px 0px 20px 0;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  text-align: center;
+  margin: 12px;
+  padding: 12px;
+  /*  */
+  border: 2px solid #f30a0a;
+  box-shadow: 0 0 5px #f30a0a, 0 0 25px #f30a0a;
+  height: auto;
+  border-radius: 5em;
+  /* transform: scale(1.1); */
+  filter: brightness(1.3);
+  /* transform: rotateY(180deg); */
+
+}
+
+.container ul li {
+  color: #191919;
+}
+
+.Information ul li a {
+  color: #090220;
+}
+
+.container .heading {
+  color: black;
+}
+
+
+
+/* Button */
+
+button {
+  background: transparent;
+  color: #f30a0a;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid #f30a0a;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: .4s ease;
+  padding: 17px;
+  text-align: center;
+  margin-left: 9px;
+
+}
+
+button:hover {
+  background: #f30a0a;
+  color: white;
+  border: 2px solid #f30a0a;
+  box-shadow: 0 0 5px #f30a0a,
+    0 0 25px #f30a0a;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.cv {
+  margin-left: 0.5em;
+}
+
+button a {
+  color: white;
+}
+
+
+
+/* Add this style for the buttons */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin-left: 50px;
+}
+
+/* Footer */
+footer {
+  background-color: #191919;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: "sofia", 'Aguafina Script';
+  font-size: 20px;
+  text-transform: capitalize;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  /* Styles for small screens */
+  #Home h1 {
+    font-size: 4vw;
+    /* Adjust as needed */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 1200px;
+    flex-direction: row;
+  }
+}
+

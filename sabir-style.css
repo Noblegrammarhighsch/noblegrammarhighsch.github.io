@@ -1,0 +1,290 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+img {
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 3s linear infinite;
+    /* Both are not working */
+    /* Update */
+    width: 100%; /* Set the width to 100% for responsiveness */
+    /* height: auto; */
+    /* Uptade to */
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 3s linear infinite;
+
+}
+
+.linked-button {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    animation: slideInTop 1s ease-in-out;
+    /* Adding a slide-in animation from the top */
+    font-family: "sofia", 'Aguafina Script';
+    font-size: 22px;
+    text-transform: capitalize;
+
+}
+
+
+
+button {
+    background: transparent;
+    color: #f30a0a;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #f30a0a;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .4s ease;
+    padding: 17px;
+    text-align: center;
+    margin-left: 9px;
+
+}
+
+button:hover {
+    background: #f30a0a;
+    color: white;
+    border: 2px solid #f30a0a;
+    box-shadow: 0 0 5px #f30a0a,
+        0 0 25px #f30a0a;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cv {
+    margin-left: 0.5em;
+}
+
+button a {
+    color: white;
+}
+
+
+
+/* Add this style for the buttons */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-left: 50px;
+}
+
+@keyframes zoom-out {
+    100% {
+        width: 100%;
+    }
+}
+
+.text-box {
+    width: 600px;
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    /* color: #fff; */
+    color: black;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+
+
+.text-box h1 {
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 13px;
+
+}
+
+.text-box span {
+    background: red;
+    height: 2px;
+    width: 377px;
+    position: absolute;
+    left: 0;
+}
+
+.banner1 {
+    animation: slide1 12s linear infinite;
+}
+
+.banner2 {
+    animation: slide2 12s linear infinite;
+}
+
+.banner3 {
+    animation: slide3 12s linear infinite;
+}
+
+.banner4 {
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1 {
+    0% {
+        visibility: visible;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+
+}
+
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+
+}
+
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+
+}
+
+@keyframes textup {
+    10% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.text-box1 {
+    animation-delay: 0s;
+}
+
+.text-box2 {
+    animation-delay: 3s;
+}
+
+.text-box3 {
+    animation-delay: 6s;
+}
+
+.text-box4 {
+    animation-delay: 9s;
+}
+
+.container{
+    filter: opacity(1.5);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .text-box {
+        width: 90%;
+        top: 5%;
+        left: 5%;
+    }
+    .linked-button{
+        margin: -38px;
+    }
+}
+
+

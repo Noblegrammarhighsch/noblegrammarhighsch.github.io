@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+header {
+    background: linear-gradient(to top, #041308, #0b3317);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    animation: slideInTop 1s ease-in-out;
+    font-family: 'Aguafina Script';
+    font-size: 22px;
+    text-transform: capitalize;
+    height: 20vh;
+}
+
+/* Add this style for the search input */
+.search input {
+    width: 55%;
+    /* Set the width to 100% to accommodate longer text */
+    padding: 8px;
+    margin-left: -330px;
+    box-sizing: border-box;
+}
+
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.progress-line {
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    animation: progress 3s linear;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 90vw;
+    }
+
+    100% {
+        width: 100vw;
+        visibility: hidden;
+    }
+}
+
+body {
+    font-family: serif;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #041308, #0b3317);
+
+}
+
+/* 1 Container Starting */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+
+.left-text {
+    flex-basis: 43%;
+
+}
+
+.heading {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.subheading {
+    color: #ddd;
+    margin-top: 10px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.gallery {
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+
+}
+
+.about-school p {
+    color: whitesmoke;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+/* 1 Container Ending */
+
+/* 2 Container Starting */
+
+
+.second-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+
+.right-text {
+    flex-basis: 43%;
+
+}
+
+.second-heading {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.second-subheading {
+    color: #ddd;
+    margin-top: 10px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.second-gallery {
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+
+}
+
+.second-about-school p {
+    /* color: whitesmoke; */
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+
+/* 2 Container Ending */
+
+
+
+.box {
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    transition: all 1s ease-in-out;
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #191919;
+    background-position: center;
+    box-shadow: 0 0 4px white;
+}
+
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+/* Buttons */
+
+button {
+    background: transparent;
+    color: #f30a0a;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #f30a0a;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .4s ease;
+    padding: 9px;
+    text-align: center;
+    margin-left: 9px;
+
+}
+
+button:hover {
+    background: #f30a0a;
+    color: white;
+    border: 2px solid #f30a0a;
+    box-shadow: 0 0 5px #f30a0a,
+        0 0 25px #f30a0a;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cv {
+    margin-left: 0.5em;
+}
+
+button a {
+    color: white;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Add this style for the buttons */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-left: 50px;
+}
+
+
+.buttons button:first-child {
+    margin-left: auto;
+    /* Set margin-left to auto for the first button to push the others to the right */
+}
+
+.buttons button:hover {
+    background: #f30a0a;
+    color: white;
+    border: 2px solid #f30a0a;
+    box-shadow: 0 0 5px #f30a0a,
+        0 0 25px #f30a0a;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.linked-button {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 50px;
+
+}
+
+
+.logo {
+    background: linear-gradient(to right, #041308, #0b3317);
+    width: 100%;
+}
+
+.logo img {
+    border: 2px solid #f30a0a;
+    box-shadow: 0 0 5px #f30a0a, 0 0 25px #f30a0a;
+    height: auto;
+    text-align: center;
+    border-radius: 5em;
+    transition: 0.5s ease;
+    cursor: pointer;
+    transform: scale(1);
+    /*  */
+    transform: rotateY(0);
+    perspective: 1000px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 350px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /* Update */
+
+    transform: scale(1.1);
+    filter: brightness(1.3);
+    /* Adjust the brightness to make it shine more */
+    transform: rotateY(180deg);
+
+}
+
+/* Update Image's Setting */
+/* ... (your existing styles) ... */
+
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo img {
+    /* ... (your existing styles) ... */
+
+    animation: rotateLogo 5s linear infinite;
+    /* Adjust the duration as needed */
+}
+
+/* ... (your existing styles) ... */
+
+
+
+
+
+
+.School-Life {
+    color: rgba(255, 236, 236, 0.8);
+    background: linear-gradient(to top, #0a3416, #041308);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: center;
+    /* Update */
+    /* box-shadow: 0 0 5px #f30a0a,
+        0 0 25px #f30a0a; */
+}
+
+footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: "sofia", 'Aguafina Script';
+    font-size: 15px;
+    text-transform: capitalize;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+
+/*...........................................Lets Make This Webpage Responsible.................................................... */
+
+
+/*                            'sm': '640px',
+//                                  => @media (min-width: 640px) { ... }
+                                'md': '768px',
+//                                   => @media (min-width: 768px) { ... }
+'                                      lg': '1024px',
+//                                            => @media (min-width: 1024px) { ... }
+'                                           xl': '1280px',
+//                                              => @media (min-width: 1280px) { ... }
+'                                                 2xl': '1536px',
+//                                                   => @media (min-width: 1536px) { ... } */
+
+/* Media Query for Width <= 1024px */
+
+/* Media Query for Width <= 600px */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-block: 20px;
+        padding-inline: 12px;
+        flex-direction: column;
+        padding-block: 20px;
+        width: 100vw;
+        height: 31vh;
+        padding-inline: 12px
+    }
+
+
+
+    .search input {
+        width: 103%;
+        padding: 2px;
+        /* Set the width to 100% to accommodate longer text */
+        margin-left: -10px;
+    }
+
+
+
+    .logo img {
+        margin-left: 90px;
+    }
+
+    .container,
+    .second-container {
+        flex-direction: column;
+        padding: 20px;
+        font-size: 25px;
+        margin-left: -10px
+    }
+
+    .gallery,
+    .second-gallery {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .linked-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .School-Life {
+        width: 92vw;
+        margin-left: 13px
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    header {
+        height: 39vh;
+    }
+
+    .search input {
+        font-size: 10px;
+        height: 4vh;
+    }
+    .about-school p, .second-about-school p{
+        font-size: 20px
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    header {
+        height: 42vh;
+    }
+
+    .search input {
+        width: 103%;
+        margin-left: -7px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .search input {
+        width: 56%;
+        margin-left: 51px;
+    }
+
+    .linked-button {
+        margin-left: 4vw;
+        margin-top: 42px;
+    }
+    /* update */
+    header {
+        flex-direction: column;
+        padding-block: 20px;
+        padding-inline: 12px;
+        flex-direction: column;
+        padding-block: 20px;
+        width: 100vw;
+        height: 31vh;
+        padding-inline: 12px
+    }
+
+
+
+    .search input {
+        width: 103%;
+        padding: 2px;
+        /* Set the width to 100% to accommodate longer text */
+        margin-left: -10px;
+    }
+
+
+
+    .logo img {
+        margin-left: 90px;
+    }
+
+    .container,
+    .second-container {
+        flex-direction: column;
+        padding: 20px;
+        font-size: 25px;
+        margin-left: -10px
+    }
+
+    .gallery,
+    .second-gallery {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .linked-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .School-Life {
+        width: 92vw;
+        margin-left: 13px
+    }
+}
+
+/* Laptop */
+/* Media Query for Width <= 1444px */
+/* Media Query for Width <= 1444px */
+@media screen and (max-width: 1444px) {
+    .linked-button {
+        margin-left: -29vw;
+        margin-top: 19px;
+    }
+
+}
